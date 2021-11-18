@@ -1,0 +1,38 @@
+version: '3.1'
+services:
+  turismo-real-utils:
+    build: turismo-real-api-utils/.
+    ports:
+      - '4999:4999'
+    environment:
+      DB_CONNECTION: 'string connection'
+
+  turismo-real-login:
+    build: turismo-real-api.login/.
+    ports:
+      - '5000:5000'
+  
+  turismo-real-usuarios:
+    build: turismo-real-api-usuarios/.
+    ports:
+      - '5001:5001'
+
+  turismo-real-deptos:
+    build: turismo-real-api-departamentos/.
+    ports:
+      - '5002:5002'
+  
+  turismo-real-servicios:
+    build: turismo-real-api-servicios/.
+    ports:
+      - '5003:5003'
+  
+  turismo-real-reservas:
+    build: turismo-real-api-reservas/.
+    ports:
+      - '5004:5004'
+  
+  turismo-real-web:
+    build: turismo-real-fron-web/.
+    ports:
+      - '6000:6000'
