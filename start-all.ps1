@@ -6,3 +6,4 @@ Start-Process powershell ./start-reservas.ps1
 Start-Process powershell ./start-servicios.ps1
 Start-Process powershell ./start-usuarios.ps1
 Start-Process powershell ./start-utils.ps1
+Start-Process powershell ./start-imagen.ps1
